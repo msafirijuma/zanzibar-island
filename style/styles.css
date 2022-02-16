@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+:root {
+  --primary-font: "lato", san-seriff;
+  --primary-color: #eabcde;
+  --primary: #0d3344eb;
+  --primary-dark: #052634eb;
+  --secondary: #49a0eb;
+  --secondary-focus: #285780e0;
+  --off-white: #fcfcfc;
+  --web-color: #00b0ff;
+}
+
+body {
+  font-family: --var(--primary-font);
+  font-size: 17px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER AND NAVIGATIONS MENU */
+
+.header {
+  background-color: var(--primary);
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid rgb(0, 255, 255);
+}
+
+.brand-wrapper {
+  margin-right: 5%;
+  color: #999;
+}
+
+.brand-slogan {
+  display: none;
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  padding: 0.6rem;
+  margin: 0.2rem;
+}
+
+.nav-bar {
+  margin: 0px;
+}
+
+.nav-bar .list-group {
+  list-style-type: none;
+  padding: 0.6rem;
+  margin: 0.3rem;
+}
+
+.nav-bar .list-group .list-item {
+  display: inline;
+}
+
+.nav-bar .link {
+  color: var(--off-white);
+  text-decoration: none;
+  font-weight: 100px;
+  margin: 2px;
+}
+
+.nav-bar .link:hover {
+  color: cyan;
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+/* MAIN SECTION */
+
+/* SLIDESHOW IMAGES / CAROUSEL */
+
+.slideshow {
+  max-width: 1200px;
+  position: relative;
+  margin: 10px 10px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 1.2rem;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #000;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ACTIVITIES AND TRIPS SECTION */
+
+.visit-trip-section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 10px;
+  margin: 10px 5px;
+  overflow-x: hidden;
+}
+
+.one,
+.two,
+.three {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4), 0px -4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.activity-image {
+  width: 100%;
+  height: auto;
+}
+
+/* PARALLAX EFFECTS */
+
+.parallax-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax-section div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.parallax-beach-image {
+  background: url(../images/Nakupenda-Beach-Zanzibar-Beach.jpg);
+  width: 100vw;
+  height: 80vh;
+}
+.parallax-market-image {
+  background: url(../images/images.jpg);
+  width: 100vw;
+  height: 600px;
+}
+.parallax-hotel-image {
+  background: url(../images/Depositphotos_275945666_xl-2015-1024x683.jpg);
+  width: 100vw;
+  height: 80vh;
+}
+.parallax-heritage-image {
+  background: url(../images/home-masthead-1.jpg);
+  width: 100vw;
+  height: 600px;
+}
+.parallax-forest-image {
+  background: url(../images/download.jpg);
+  width: 100vw;
+  height: 80vh;
+}
+
+/* FOOTER AND SOCIAL ICONS */
+
+.social .list-group .list-item .fa {
+  padding: 10px;
+  font-size: 1.4rem;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.social .list-group .list-item .fa-youtube {
+  color: white;
+  background-color: red;
+  border-radius: 10px;
+}
+.social .list-group .list-item .fa-youtube:hover {
+  color: red;
+  background-color: white;
+}
+
+.social .list-group .list-item .fa-instagram {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  color: white;
+  border-radius: 10px;
+}
+.social .list-group .list-item .fa-instagram:hover {
+  background-color: white;
+}
+
+.social .list-group .list-item .fa-facebook {
+  color: white;
+  background-color: blue;
+  border-radius: 10px;
+}
+.social .list-group .list-item .fa-facebook:hover {
+  color: blue;
+  background-color: white;
+}
+
+.social .list-group .list-item .fa:hover {
+  opacity: 0.9;
+}
+
+.divider {
+  width: 20vh;
+  height: 4px;
+  border-radius: 100px;
+  background-color: var(--web-color);
+  margin: 3px auto;
+  margin-bottom: 5px;
+}
+
+.divider-footer-header {
+  background-color: #999;
+}
+
+.footer {
+  background-color: var(--primary);
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 5px 2px;
+  color: #999;
+  font-weight: 100px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+footer .nav-bar .list-group {
+  list-style-type: none;
+  text-align: right;
+  padding: 0.6rem;
+  margin: 0.4rem;
+}
+
+footer .link {
+  color: var(--off-white);
+  text-decoration: none;
+  font-weight: 100px;
+  margin: 2px;
+}
+
+footer .list-group .list-item {
+  display: inline;
+}
+
+.social {
+  text-align: center;
+}
+
+.social .link {
+  padding: 3px;
+}
+.social .link:hover {
+  color: var(--secondary-focus);
+  text-decoration: underline;
+}
+
+/* MEDIA SCREENS */
+@media screen and (max-width: 800px) {
+  /* HEADER AND NAVIGATIONS MENU */
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .brand-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .brand-slogan {
+    display: block;
+  }
+
+  .nav-bar .list-group .list-item {
+    display: inline;
+    margin: 0 5px;
+  }
+
+  /* VISIT AND TRIP SECTION */
+  .visit-trip-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px 5px;
+    overflow-x: hidden;
+  }
+}
