@@ -405,4 +405,8 @@ footer .list-group .list-item {
     margin: 10px 5px;
     overflow-x: hidden;
   }
+
+  .parallax-section div {
+    background-attachment: scroll;
+  }
 }
