@@ -369,6 +369,12 @@ footer .list-group .list-item {
   text-decoration: underline;
 }
 
+.copyright {
+  font-size: smaller;
+  margin-top: 16px;
+  margin-bottom: 3px;
+}
+
 /* MEDIA SCREENS */
 @media screen and (max-width: 800px) {
   /* HEADER AND NAVIGATIONS MENU */
