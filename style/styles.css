@@ -14,6 +14,7 @@
 body {
   font-family: --var(--primary-font);
   font-size: 17px;
+  background-color: rgba(255, 255, 255, 0.521);
 }
 
 * {
@@ -240,27 +241,27 @@ body {
 }
 
 .parallax-beach-image {
-  background: url(../images/Nakupenda-Beach-Zanzibar-Beach.jpg);
+  background: url(../images/palm-beach-sunset.jpeg);
   width: 100vw;
   height: 80vh;
 }
 .parallax-market-image {
-  background: url(../images/images.jpg);
+  background: url(../images/children-fishing-activities.jpg);
   width: 100vw;
   height: 600px;
 }
 .parallax-hotel-image {
-  background: url(../images/Depositphotos_275945666_xl-2015-1024x683.jpg);
+  background: url(../images/classic-hotels.jpg);
   width: 100vw;
   height: 80vh;
 }
 .parallax-heritage-image {
-  background: url(../images/home-masthead-1.jpg);
+  background: url(../images/maskan.jpg);
   width: 100vw;
   height: 600px;
 }
 .parallax-forest-image {
-  background: url(../images/download.jpg);
+  background: url(../images/monkeys-in-the-forest.jpg);
   width: 100vw;
   height: 80vh;
 }
@@ -335,6 +336,7 @@ body {
   padding: 5px 2px;
   color: #999;
   font-weight: 100px;
+  margin-top: 10px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
