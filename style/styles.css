@@ -56,7 +56,7 @@ body {
 .brand-name {
   font-size: 1.5rem;
   padding: 0.6rem;
-  margin: 0.2rem;
+  margin: 0.1rem;
 }
 
 .nav-bar {
@@ -88,7 +88,13 @@ body {
 
 /* MAIN SECTION */
 
-/* SLIDESHOW IMAGES / CAROUSEL */
+.history {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* SLIDESHOW IMAGES OR CAROUSEL */
 
 .slideshow {
   max-width: 1200px;
@@ -111,11 +117,6 @@ body {
 .jozani-slides,
 .market-slides {
   display: none;
-}
-
-.fa-map-marker-alt {
-  color: red;
-  font: 20px;
 }
 
 /* Next & previous buttons */
@@ -153,7 +154,7 @@ body {
   font-size: 1.4rem;
   padding: 8px 12px;
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   width: 100%;
   text-align: center;
 }
