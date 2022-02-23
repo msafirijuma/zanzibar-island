@@ -1,7 +1,9 @@
 // SCRIPT FOR IMAGE SLIDESHOW OR CAROUSEL
 
-  var slideIndex = 0 ;
-          showSlides();
+var slideIndex = 0;
+
+  // Next/previous controls
+        showSlides();
 
           function showSlides() {
             var i;
@@ -15,7 +17,10 @@
             }
             slides[slideIndex - 1].style.display = "block";
             setTimeout(showSlides, 3000); // Change image every 3 seconds
-          }
+}
+          
+
+  
 
     
 
@@ -25,7 +30,7 @@
 
 
 // Ngezi Forest Manual Slides
-var ngeziSlideIndex = 0;
+var ngeziSlideIndex = 1;
 previewNgeziSlides(ngeziSlideIndex);
 
 // Next/previous controls
@@ -58,7 +63,7 @@ function previewNgeziSlides(n) {
 // Jozani Manual Slides
 
  
-var jozaniSlideIndex = 0;
+var jozaniSlideIndex = 1;
 previewJozaniSlides(jozaniSlideIndex);
 
 // Next/previous controls
@@ -95,7 +100,7 @@ function previewJozaniSlides(n) {
 // Jozani Manual Slides
 
  
-var marketSlideIndex = 0;
+var marketSlideIndex = 1;
 previewMarketSlides(marketSlideIndex);
 
 // Next/previous controls

@@ -93,61 +93,7 @@ body {
 
 /* MAIN SECTION */
 
-/* About Zanzibar */
-
-.about-zanzibar-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 15px;
-}
-
-.about-zanzibar {
-  padding: 15px 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: left;
-  margin-bottom: 20px;
-}
-
-.about-zanzibar p {
-  margin: 4px;
-  text-align: center;
-}
-
-.about-zanzibar b {
-  font-weight: 550;
-  font-size: medium;
-}
-
-.header-title {
-  color: var(--primary);
-  font-weight: lighter;
-}
-
-.about-link {
-  display: inline-block;
-  margin: 2px auto;
-  text-decoration: none;
-  color: var(--primary);
-  transition: color 1.2s;
-}
-
-.about-link:hover {
-  color: var(--web-color);
-  font-weight: lighter;
-}
-
-/* .horizontal-rule {
-  background-color: rgba(0, 0, 0, 0.4);
-  height: 1px;
-  font-weight: lighter;
-} */
-
-/* SLIDESHOW IMAGES OR CAROUSEL */
+/*AUTO SLIDESHOW IMAGES OR CAROUSEL */
 
 .slideshow {
   max-width: 1200px;
@@ -265,6 +211,54 @@ body {
   to {
     opacity: 1;
   }
+}
+
+/* About Zanzibar */
+
+.about-zanzibar-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.about-zanzibar {
+  padding: 15px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.about-zanzibar p {
+  margin: 4px;
+  text-align: center;
+}
+
+.about-zanzibar b {
+  font-weight: 550;
+  font-size: medium;
+}
+
+.header-title {
+  color: var(--primary);
+  font-weight: lighter;
+}
+
+.about-link {
+  display: inline-block;
+  margin: 2px auto;
+  text-decoration: none;
+  color: var(--primary);
+  transition: color 1.2s;
+}
+
+.about-link:hover {
+  color: var(--web-color);
+  font-weight: lighter;
 }
 
 /* ACTIVITIES AND TRIPS SECTION */
@@ -429,6 +423,7 @@ body {
   font-weight: lighter;
   font-size: 0.9rem;
   font-family: "Bad Script", cursive;
+  /* font-family: "Dancing Script", cursive; */
   margin-top: 20px;
 }
 
@@ -640,6 +635,10 @@ footer .list-group .list-item {
     background: url(../images/fort.jpg);
     width: 100vw;
     height: 60vh;
+  }
+
+  .parallax-fort-image .parallax-header-title {
+    color: #333;
   }
 
   .parallax-hotel-image {
