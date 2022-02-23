@@ -40,6 +40,7 @@ body {
   background-color: var(--primary);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-bottom: 3px solid rgb(0, 255, 255);
 }
 
@@ -78,7 +79,7 @@ body {
   color: var(--off-white);
   text-decoration: none;
   font-weight: 100px;
-  margin: 2px;
+  margin: 2px 2px;
   transition: color 0.7s;
 }
 
@@ -421,9 +422,9 @@ body {
   overflow: hidden;
   color: #fff;
   font-weight: lighter;
-  font-size: 0.9rem;
-  font-family: "Bad Script", cursive;
-  /* font-family: "Dancing Script", cursive; */
+  font-size: 1rem;
+  /* font-family: "Bad Script", cursive; */
+  font-family: "Dancing Script", cursive;
   margin-top: 20px;
 }
 
@@ -438,18 +439,36 @@ body {
   position: relative;
 }
 
+.parallax-fort-image,
+.parallax-hotel-image,
+.parallax-heritage-image,
+.parallax-forest-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  top: 100px;
+}
+
 .parallax-header-title {
   position: relative;
   color: #f2f2f2;
-  z-index: 1000;
-  top: 50%;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: lighter;
-  font-family: "Dancing Script", cursive;
+  font-family: "Bad Script", cursive;
 }
 
+.parallax-paragraph {
+  font-family: "Lato";
+  margin: 10px 1px;
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
 .parallax-fort-image {
-  background: url(../images/fort.jpg);
+  background: url(../images/chake-chake-during-the-night.jpg);
   width: 100vw;
   height: 80vh;
 }
@@ -632,13 +651,13 @@ footer .list-group .list-item {
   }
 
   .parallax-fort-image {
-    background: url(../images/fort.jpg);
+    background: url(../images/chake-chake-during-the-night.jpg);
     width: 100vw;
     height: 60vh;
   }
 
   .parallax-fort-image .parallax-header-title {
-    color: #333;
+    color: #fff;
   }
 
   .parallax-hotel-image {
