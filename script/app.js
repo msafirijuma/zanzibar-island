@@ -117,14 +117,44 @@ function previewMarketSlides(n) {
   var i;
   var slides = document.getElementsByClassName("market-slides");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {marketSlideIndex = 1}
-  if (n < 1) {marketSlideIndex = slides.length}
+  if (n > slides.length) { marketSlideIndex = 1 }
+  if (n < 1) { marketSlideIndex = slides.length }
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+    slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].className = dots[i].className.replace("active", "");
   }
-  slides[marketSlideIndex-1].style.display = "block";
-  dots[marketSlideIndex-1].className += " active";
+  slides[marketSlideIndex - 1].style.display = "block";
+  dots[marketSlideIndex - 1].className += "active";
 }
+  
+
+  // SLIDE SHOW IMAGES FOR ACCOMODATION AND HOTELS
+
+  var accomodationSlideIndex = 1;
+  showDivs(accomodationSlideIndex);
+
+  function plusDivs(n) {
+    showDivs(accomodationSlideIndex += n);
+  }
+
+  function currentDiv(n) {
+    showDivs(accomodationSlideIndex = n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("accomodation-styles");
+    var dots = document.getElementsByClassName("demo-btn");
+    if (n > x.length) { accomodationSlideIndex = 1 }
+    if (n < 1) { accomodationSlideIndex = x.length }
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    x[accomodationSlideIndex - 1].style.display = "block" ;
+    dots[accomodationSlideIndex - 1].className += " active";
+  }
