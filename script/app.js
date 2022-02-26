@@ -46,17 +46,17 @@ function ngeziCurrentSlide(n) {
 function previewNgeziSlides(n) {
   var i;
   var ngeziSlides = document.getElementsByClassName("ngezi-slides");
-  var dots = document.getElementsByClassName("dot");
+  var dots = document.getElementsByClassName("dot-ngezi");
   if (n > ngeziSlides.length) {ngeziSlideIndex = 1}
   if (n < 1) {ngeziSlideIndex = ngeziSlides.length}
   for (i = 0; i < ngeziSlides.length; i++) {
       ngeziSlides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+      dots[i].className = dots[i].className.replace("active", "");
   }
   ngeziSlides[ngeziSlideIndex-1].style.display = "block";
-  dots[ngeziSlideIndex-1].className += " active";
+  dots[ngeziSlideIndex-1].className += "active";
 }
 
 
@@ -79,25 +79,23 @@ function jozaniCurrentSlide(n) {
 function previewJozaniSlides(n) {
   var i;
   var slides = document.getElementsByClassName("jozani-slides");
-  var dots = document.getElementsByClassName("dot");
+  var dots = document.getElementsByClassName("dot-jozani");
   if (n > slides.length) {jozaniSlideIndex = 1}
   if (n < 1) {jozaniSlideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+      dots[i].className = dots[i].className.replace("active", "");
   }
   slides[jozaniSlideIndex-1].style.display = "block";
-  dots[jozaniSlideIndex-1].className += " active";
+  dots[jozaniSlideIndex-1].className += "active";
 }
 
 
 
 // Stone Town Darajani Market
 
-
-// Jozani Manual Slides
 
  
 var marketSlideIndex = 1;
@@ -116,7 +114,7 @@ function marketCurrentSlide(n) {
 function previewMarketSlides(n) {
   var i;
   var slides = document.getElementsByClassName("market-slides");
-  var dots = document.getElementsByClassName("dot");
+  var dots = document.getElementsByClassName("dot-market");
   if (n > slides.length) { marketSlideIndex = 1 }
   if (n < 1) { marketSlideIndex = slides.length }
   for (i = 0; i < slides.length; i++) {
@@ -145,7 +143,7 @@ function previewMarketSlides(n) {
 
   function showDivs(n) {
     var i;
-    var x = document.getElementsByClassName("accomodation-styles");
+    var x = document.getElementsByClassName("hotels-slides");
     var dots = document.getElementsByClassName("demo-btn");
     if (n > x.length) { accomodationSlideIndex = 1 }
     if (n < 1) { accomodationSlideIndex = x.length }
@@ -153,8 +151,8 @@ function previewMarketSlides(n) {
       x[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+      dots[i].className = dots[i].className.replace("active", "");
     }
     x[accomodationSlideIndex - 1].style.display = "block" ;
-    dots[accomodationSlideIndex - 1].className += " active";
+    dots[accomodationSlideIndex - 1].className += "active";
   }

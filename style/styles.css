@@ -11,6 +11,7 @@ font-family: "Dancing Script", cursive;
 font-family: "Lato", sans-serif;
 font-family: "Raleway", sans-serif; */
 
+/* BASIC */
 :root {
   --primary-font: "lato", san-seriff;
   --primary-color: #eabcde;
@@ -34,8 +35,9 @@ body {
   padding: 0;
 }
 
-/* HEADER AND NAVIGATIONS MENU */
+/* END */
 
+/* HEADER AND NAVIGATIONS MENU */
 .header {
   background-color: var(--primary);
   display: flex;
@@ -92,6 +94,8 @@ body {
   color: #00b0ff;
 }
 
+/* END OF THE HEADER */
+
 /* MAIN SECTION */
 
 /*AUTO SLIDESHOW IMAGES OR CAROUSEL */
@@ -117,7 +121,7 @@ body {
 .ngezi-slides,
 .jozani-slides,
 .market-slides,
-.accomodation-styles {
+.hotels-slides {
   display: none;
 }
 
@@ -173,17 +177,20 @@ body {
 }
 
 /* The dots/bullets/indicators */
-.dot {
+.dot-ngezi,
+.dot-jozani,
+.dot-market {
   cursor: pointer;
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #000;
+  background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
+/* Active class produced by the help of JavaScript */
 .active,
 .dot:hover {
   background-color: #717171;
@@ -215,7 +222,7 @@ body {
   }
 }
 
-/* About Zanzibar */
+/* ABOUT ZANZIBAR SECTION*/
 
 .about-zanzibar-header {
   display: flex;
@@ -262,9 +269,9 @@ body {
   color: var(--web-color);
   font-weight: lighter;
 }
+/* END OF ABOUT ZANZIBAR SECTION */
 
 /* ACTIVITIES AND TRIPS SECTION */
-
 .visit-trip-section-header {
   display: flex;
   justify-content: center;
@@ -337,17 +344,40 @@ body {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4), 0px -4px 8px rgba(0, 0, 0, 0.4);
 }
 
+/* The dots/bullets/indicators */
+.dot-ngezi,
+.dot-jozani,
+.dot-market {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.8s ease;
+}
+
+.dot-ngezi,
+.dot-jozani,
+.dot-market:hover {
+  background-color: #777;
+  cursor: pointer;
+}
+
 .activity-image {
   width: 100%;
   height: auto;
   border-radius: 1px;
 }
 
+/* link for unesco */
 .unesco {
   text-decoration: none;
   color: #2b6e17;
 }
 
+/* internal link for tour */
 .tour-link {
   display: inline-block;
   margin: 2px auto 25px;
@@ -367,6 +397,7 @@ body {
   align-items: center;
   margin-bottom: 20px;
 }
+/* END OF TRIP AND TOUR SECTION */
 
 /* HOTELS AND ACCOMODATIONS */
 .accomodation-section-header {
@@ -411,13 +442,48 @@ body {
   transition: color 1.2s;
 }
 
-/* ACCOMODATION SLIDE SHOW */
+/* ACCOMODATION AND HOTELS SLIDE SHOW */
 
 .images-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  width: 100%;
+  height: 300px;
+}
+
+.images-accomodation {
+  max-width: 100%;
+  height: 300px;
+  /* height: 683px; */
+}
+
+.hotels-slides {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+.name-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+  position: relative;
+  top: -5px;
+  padding: 1px 5px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.hotel-name {
+  color: #bbb;
+  font-size: 1.3rem;
+  font-weight: lighter;
+  font-family: "Bad Script", cursive;
 }
 
 .btn-wrapper {
@@ -426,6 +492,7 @@ body {
   justify-content: center;
   flex-direction: column;
   padding: 10px;
+  margin-bottom: 20px;
 }
 
 .btn-preview,
@@ -435,7 +502,7 @@ body {
   padding: 5px;
   color: #333;
   font-size: 1rem;
-  margin: 10px 10px;
+  margin: 20px 10px 10px;
   border: 1px solid transparent;
 }
 
@@ -453,16 +520,17 @@ body {
 }
 
 .demo-btn:hover {
-  background-color: #bbb;
+  background-color: #aaa;
   cursor: pointer;
+  transition: background-color 0.8s;
 }
 
 .active {
   background-color: lightseagreen;
 }
+/* END OF HOTELS AND ACCOMODATION  */
 
 /* PARALLAX EFFECTS */
-
 .parallax-section {
   display: flex;
   justify-content: center;
@@ -539,6 +607,8 @@ body {
   width: 100vw;
   height: 600px;
 }
+
+/* END OF PARALLAX EFFECT */
 
 /* FOOTER AND SOCIAL ICONS */
 
@@ -650,8 +720,9 @@ footer .list-group .list-item {
   margin-top: 16px;
   margin-bottom: 3px;
 }
+/* END OF THE FOOTER */
 
-/* MEDIA SCREENS */
+/* MEDIA QUERIES AND SCREEN SIZES */
 @media screen and (max-width: 800px) {
   /* HEADER AND NAVIGATIONS MENU */
   .header {
@@ -727,3 +798,5 @@ footer .list-group .list-item {
     height: 600px;
   }
 }
+
+/* END OF MEDIA QUERIES AND SCREEN SIZES */

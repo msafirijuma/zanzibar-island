@@ -150,10 +150,10 @@
                     
                     <!-- The dots/circles -->
                     <div style="text-align:center">
-                        <span class="dot" onclick="ngeziCurrentSlide(1)"></span>
-                        <span class="dot" onclick="ngeziCurrentSlide(2)"></span>
-                        <span class="dot" onclick="ngeziCurrentSlide(3)"></span>
-                        <span class="dot" onclick="ngeziCurrentSlide(4)"></span>
+                        <span class="dot-ngezi " onclick="ngeziCurrentSlide(1)"></span>
+                        <span class="dot-ngezi " onclick="ngeziCurrentSlide(2)"></span>
+                        <span class="dot-ngezi " onclick="ngeziCurrentSlide(3)"></span> 
+                        <span class="dot-ngezi " onclick="ngeziCurrentSlide(4)"></span>
                     </div>
                    <div class="location-and-info-wrapper">
                         <h3>Ngezi Forest Reserve</h3>
@@ -203,10 +203,10 @@
                     
                     <!-- The dots/circles -->
                     <div style="text-align:center">
-                        <span class="dot" onclick="jozaniCurrentSlide(1)"></span>
-                        <span class="dot" onclick="jozaniCurrentSlide(2)"></span>
-                        <span class="dot" onclick="jozaniCurrentSlide(3)"></span>
-                        <span class="dot" onclick="jozaniCurrentSlide(4)"></span>
+                        <span class="dot-jozani " onclick="jozaniCurrentSlide(1)"></span>
+                        <span class="dot-jozani " onclick="jozaniCurrentSlide(2)"></span>
+                        <span class="dot-jozani " onclick="jozaniCurrentSlide(3)"></span>
+                        <span class="dot-jozani " onclick="jozaniCurrentSlide(4)"></span>
                     </div>
                     <div class="location-and-info-wrapper">
                         <h3>Jozani Chwaka Bay National Park</h3>
@@ -270,12 +270,12 @@
                     
                     <!-- The dots/circles -->
                     <div style="text-align:center">
-                        <span class="dot" onclick="marketCurrentSlide(1)"></span>
-                        <span class="dot" onclick="marketCurrentSlide(2)"></span>
-                        <span class="dot" onclick="marketCurrentSlide(3)"></span>
-                        <span class="dot" onclick="marketCurrentSlide(4)"></span>
-                        <span class="dot" onclick="marketCurrentSlide(5)"></span>
-                        <span class="dot" onclick="marketCurrentSlide(6)"></span>
+                        <span class="dot-market " onclick="marketCurrentSlide(1)"></span>
+                        <span class="dot-market " onclick="marketCurrentSlide(2)"></span>
+                        <span class="dot-market " onclick="marketCurrentSlide(3)"></span>
+                        <span class="dot-market " onclick="marketCurrentSlide(4)"></span>
+                        <span class="dot-market " onclick="marketCurrentSlide(5)"></span>
+                        <span class="dot-market " onclick="marketCurrentSlide(6)"></span>
                     </div>
                     <div class="location-and-info-wrapper">
                         <!-- <i class="material-icons">face</i> -->
@@ -307,10 +307,55 @@
 
         <!-- IMAGE SLIDE SHOW FRO ACCOMODATION  AND HOTELS-->
 
-        <div class="images-wrapper" style="max-width:800px">
-            <img class="accomodation-styles" src="images/verde-hotel.jpg" style="width:100%">
-            <img class="accomodation-styles" src="images/golden-tulip.jpg" style="width:100%">
-            <img class="accomodation-styles" src="images/hotel-zanzibar.jpg " style="width:100%">
+        <div class="images-wrapper">
+            <div class="hotels-slides">
+                <img class="images-accomodation" src="images/verde-hotel.jpg">
+                <div class="name-wrapper">
+                    <h2 class="hotel-name">Holtel Verde Zanzibar</h2>
+                </div>
+            </div>
+            <div class="hotels-slides">
+                <img class="images-accomodation" src="images/golden-tulip.jpg">
+                <div class="name-wrapper">
+                    <h2 class="hotel-name">Golden Tulip Zanzibar Resort</h2>
+                </div>
+            </div>
+            <div class="hotels-slides">
+                <img class="images-accomodation" src="images/zuri-zanzibar.jpg">
+                <div class="name-wrapper">
+                    <h2 class="hotel-name">Zuri Zanzibar Hotel</h2>
+                </div>
+            </div>
+            <div class="hotels-slides">
+                <img class="images-accomodation" src="images/tembo-house-hotel.jpg">
+                <div class="name-wrapper">
+                    <h2 class="hotel-name">Tembo House Hotel</h2>
+                </div>
+            </div>
+            <div class="hotels-slides">
+                <img class="images-accomodation" src="images/dhow-palace.jpg">
+                <div class="name-wrapper">
+                    <h2 class="hotel-name">Dhow Palace Hotel</h2>
+                </div>
+            </div>
+            <div class="hotels-slides">
+                <img class="images-accomodation" src="images/stunning-underwater-room-manta-hotel.jpg">
+                <div class="name-wrapper">
+                    <h2 class="hotel-name">Manta Resort Hotel - Pemba</h2>
+                </div>
+            </div>
+            <div class="hotels-slides">
+                <img class="images-accomodation" src="images/par.jpg">
+                <div class="name-wrapper">
+                    <h2 class="hotel-name">Park Hyatt Zanzibar</h2>
+                </div>
+            </div>
+            <div class="hotels-slides">
+                <img class="images-accomodation" src="images/tikitam-palms.jpg">
+                <div class="name-wrapper">
+                    <h2 class="hotel-name">Tikitam Palms Boutique Hotel</h2>
+                </div>
+            </div>
         </div>
         
         <div class="btn-wrapper">
@@ -320,9 +365,14 @@
             </div>
 
             <div class="btn-numbers">
-                <button class="demo-btn active" onclick="currentDiv(1)">1</button>
-                <button class="demo-btn active" onclick="currentDiv(2)">2</button>
-                <button class="demo-btn active" onclick="currentDiv(3)">3</button>
+                <button class="demo-btn " onclick="currentDiv(1)">1</button>
+                <button class="demo-btn " onclick="currentDiv(2)">2</button>
+                <button class="demo-btn " onclick="currentDiv(3)">3</button>
+                <button class="demo-btn " onclick="currentDiv(4)">4</button>
+                <button class="demo-btn " onclick="currentDiv(5)">5</button>
+                <button class="demo-btn " onclick="currentDiv(6)">6</button>
+                <button class="demo-btn " onclick="currentDiv(7)">7</button>
+                <button class="demo-btn " onclick="currentDiv(8)">8</button>
             </div>
         </div>
 
@@ -331,7 +381,9 @@
         <!-- Parallax Section -->
         <section class="parallax-section">
             <!-- <div>
-                The Incredible land for tourism
+                You might also like
+                Check out sites and cities
+                explore other popular cities and sites
             </div> -->
             <div class="parallax-fort-image">
                 <h2 class="parallax-header-title">Chake Chake Town</h2>
