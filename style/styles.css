@@ -855,3 +855,73 @@ footer .list-group .list-item {
 }
 
 /* END OF MEDIA QUERIES AND SCREEN SIZES */
+
+/* ABOUT HTML PAGE */
+
+.government-header,
+.geography-header,
+.history-header,
+.religion-header,
+.tourism-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.government,
+.geography,
+.history,
+.religion,
+.tourism {
+  padding: 15px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.government,
+.geography,
+.history,
+.religion,
+.tourism p {
+  margin: 4px;
+  text-align: center;
+}
+
+.worship-place {
+  color: var(--primary);
+  margin: 5px;
+  font-weight: lighter;
+}
+
+.source-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 5px;
+  background-color: #999;
+}
+
+.source-header {
+  color: var(--primary);
+  margin: 10px 5px;
+  font-size: 1.4rem;
+  font-weight: lighter;
+}
+
+.source-paragraph {
+  color: #999;
+  padding: 5px;
+  font-size: 1rem;
+}
+
+.source-link {
+  text-decoration: none;
+}
