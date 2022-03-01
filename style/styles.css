@@ -42,6 +42,7 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom: 3px solid rgb(0, 255, 255);
+  padding: 8px;
 }
 
 .brand-wrapper {
@@ -599,7 +600,6 @@ body {
   font-size: 1rem;
   margin-top: 10px;
   font-family: "Dancing Script", cursive;
-  background-color: #2b6e17;
 }
 
 .parallax-section div {
@@ -798,16 +798,12 @@ footer .list-group .list-item {
     flex-direction: column;
   }
 
-  .brand-slogan {
-    display: block;
-  }
-
   .humburger {
     display: block;
-    position: fixed;
+    position: relative;
     right: 10px;
     color: #fefefe;
-    margin: 0 15px;
+    margin: 0 10px;
     font-size: 1.6rem;
   }
 
@@ -815,12 +811,10 @@ footer .list-group .list-item {
     color: #fefefe;
   }
 
-  .nav-bar.active {
-    height: 100%;
-  }
   /* Coloring humberger icon */
   .humburger .fa-bars {
     color: #fefefe;
+    text-decoration: none;
   }
 
   .nav-bar {
@@ -833,6 +827,10 @@ footer .list-group .list-item {
     height: 0;
     background-color: #333;
     overflow: hidden;
+  }
+
+  .nav-bar.active {
+    height: 100%;
   }
 
   .nav-bar .list-group {
@@ -852,7 +850,12 @@ footer .list-group .list-item {
     color: #fefefe;
     font-size: 1.5rem;
   }
-  .nav-bar .link:hover {
+
+  .nav-bar .list-group .list-item .active-link {
+    color: #00b0ff;
+  }
+
+  .nav-bar .list-group .list-item .link:hover {
     color: cyan;
     font-weight: lighter;
   }
