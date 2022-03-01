@@ -14,10 +14,15 @@
             <h1 class="brand-name">Zanzibar Island</h1>
             <p class="brand-slogan">The tour of nature</p>
         </div>
+        <div class="humburger">
+            <a href="#" class="humberger-link">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
         <nav class="nav-bar">
             <ul class="list-group">
                 <li class="list-item"><a href="../index.html" class="link">Home</a></li>
-                <li class="list-item"><a href="../html-files/accomodation.html" class="link active-link">Lodging</a></li>
+                <li class="list-item">Accomodations<a href="../html-files/accomodation.html" class="link active-link">Lodging</a></li>
                 <li class="list-item"><a href="tour.html" class="link">Tours</a></li>
                 <li class="list-item"><a href="contact.html" class="link">Contact</a></li>
                 <li class="list-item"><a href="about.html" class="link">About</a></li>
@@ -27,7 +32,6 @@
 
 
 
-    <footer class="footer">
         <footer class="footer social">
             <h2>Visit Zanzibar Island</h2>
             <hr class="divider divider-footer-header">
@@ -50,6 +54,14 @@
                 | Msafiri Juma
             </h4>
         </footer>
-    </footer>
+    <script>
+        var humburger = document.querySelector(".humburger");
+
+        humburger.onclick = function () {
+            var navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+
+    </script>
 </body>
 </html>
