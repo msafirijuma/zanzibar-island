@@ -739,13 +739,13 @@ body {
 .footer-header {
   font-family: "Bad Script", cursive;
   font-weight: lighter;
+  font-size: 1.2rem;
 }
 
 .footer {
   background-color: var(--primary);
   text-align: center;
-  font-size: 1.3rem;
-  padding: 5px 2px;
+  padding: 3px 2px;
   color: #fefefe;
   font-weight: 100px;
   margin-top: 5px;
@@ -786,8 +786,8 @@ footer .list-group .list-item {
 .copyright {
   font-size: smaller;
   font-weight: lighter;
-  margin-top: 16px;
-  margin-bottom: 3px;
+  margin-top: 0.9rem;
+  margin-bottom: 2px;
 }
 /* END OF THE FOOTER
 
@@ -937,7 +937,8 @@ footer .list-group .list-item {
 .geography-header,
 .history-header,
 .religion-header,
-.tourism-header {
+.tourism-header,
+.culture-header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -949,7 +950,8 @@ footer .list-group .list-item {
 .geography,
 .history,
 .religion,
-.tourism {
+.tourism,
+.culture {
   padding: 15px 10px;
   display: flex;
   justify-content: center;
@@ -963,8 +965,9 @@ footer .list-group .list-item {
 .geography,
 .history,
 .religion,
-.tourism p {
-  margin: 4px;
+.tourism,
+.culture p {
+  margin: 4px 1px;
   text-align: center;
 }
 
@@ -999,4 +1002,126 @@ footer .list-group .list-item {
 
 .source-link {
   text-decoration: none;
+}
+
+/* 
+
+ ACCOMODATION AND HOTELS PAGE SECTION
+
+*/
+
+.accomodation-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 2px;
+}
+
+.accomodation-header h2 {
+  color: #666;
+  margin: 5px;
+  font-weight: lighter;
+  font-size: 1.5rem;
+}
+
+.luxury-hotels {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.pemba,
+.unguja {
+  margin-bottom: 10px;
+}
+
+.luxury-hotels .pemba h2,
+.luxury-hotels .unguja h2 {
+  color: var(--primary);
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  font-weight: lighter;
+}
+
+.hotels-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px 10px;
+  padding: 3px 1px;
+}
+
+.hotels-wrapper .name-hotel {
+  font-weight: 700;
+  font: 1.2rem;
+  margin-top: 10px;
+  color: var(--primary-dark);
+  font-family: "Bad Script", cursive;
+}
+.hotels-wrapper p {
+  margin: 3px;
+}
+
+.services {
+  margin: 20px 10px;
+  padding: 5px;
+  max-width: 800px;
+}
+
+.services h3 {
+  color: var(--primary);
+  margin: 8px;
+}
+
+.services span {
+  display: inline-block;
+  margin: 3px;
+  padding: 2px;
+}
+
+.hotels-wrapper .btn {
+  display: block;
+  max-width: 250px;
+  box-sizing: border-box;
+  height: 40px;
+  padding: 5px;
+  color: white;
+  font-size: 1rem;
+  font-weight: lighter;
+  background-color: var(--primary);
+  border-radius: 7px;
+}
+
+.hotels-wrapper .btn .hotel-link {
+  color: #fefefe;
+  text-decoration: none;
+  font-weight: lighter;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+.hotels-wrapper .btn:hover {
+  cursor: pointer;
+}
+
+/* 
+
+ TRAVEL AND TOUR
+
+*/
+
+.tour-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
