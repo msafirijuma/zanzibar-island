@@ -132,6 +132,9 @@ body {
 }
 
 /* Hide the images by default */
+.hotel-slides {
+  display: none;
+}
 
 .ngezi-slides,
 .jozani-slides,
@@ -789,6 +792,33 @@ footer .list-group .list-item {
   margin-top: 0.9rem;
   margin-bottom: 2px;
 }
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--primary);
+  color: #fefefe;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+}
+
+.top a {
+  color: #fefefe;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.top:hover {
+  cursor: pointer;
+  background-color: rgb(143, 208, 228);
+}
+
 /* END OF THE FOOTER
 
 
@@ -1072,7 +1102,7 @@ footer .list-group .list-item {
 
 .services {
   margin: 20px 10px;
-  padding: 5px;
+  padding: 2px;
   max-width: 800px;
 }
 
@@ -1083,8 +1113,8 @@ footer .list-group .list-item {
 
 .services span {
   display: inline-block;
-  margin: 3px;
-  padding: 2px;
+  margin: 3px 6px;
+  padding: 3px;
 }
 
 .hotels-wrapper .btn {
@@ -1111,6 +1141,8 @@ footer .list-group .list-item {
 .hotels-wrapper .btn:hover {
   cursor: pointer;
 }
+
+/* EACH HOTEL IMAGES SLIDESHOW  */
 
 /* 
 

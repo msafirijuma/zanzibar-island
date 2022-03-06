@@ -163,3 +163,37 @@ function previewMarketSlides(n) {
     x[accomodationSlideIndex - 1].style.display = "block" ;
     dots[accomodationSlideIndex - 1].className += "active";
   }
+
+
+
+  // IMAGE SLIDESHOW FOR EACH HOTEL
+
+  var slideHotelIndex = 1;
+previewSlides(slideHotelIndex);
+
+// Next/previous controls
+// function plusSlides(n) {
+//   previewSlides(slideHotelIndex += n);
+//  }
+
+// Thumbnail image controls
+function currentHotelSlide(n) {
+  previewSlides(slideHotelIndex = n);
+}
+
+function previewSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("hotel-images-slides");
+  var dots = document.getElementsByClassName("dot-button");
+  if (n > slides.length) {slideHotelIndex = 1}
+  if (n < 1) {slideHotelIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace("active", "");
+  }
+  slides[slideHotelIndex-1].style.display = "block";
+  dots[slideHotelIndex-1].className += "active";
+}
+
