@@ -120,9 +120,16 @@ body {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  /* max-width: 1000px; */
+  width: auto;
+  /* max-height: 600px; */
   position: relative;
   margin: auto;
+}
+
+.image-slideshow {
+  width: 100%;
+  max-height: 600px;
 }
 
 .trip-slideshow-container {
@@ -508,7 +515,7 @@ body {
 
 .images-accomodation {
   max-width: 100%;
-  height: 300px;
+  height: 250px;
   /* height: 683px; */
 }
 
@@ -659,7 +666,7 @@ body {
 }
 
 .parallax-hotel-image {
-  background: url(../images/classic-hotels.jpg);
+  background: url(../images/zanzibar-serena-hotel.jpg);
   width: 100vw;
   height: 600px;
 }
@@ -908,6 +915,35 @@ footer .list-group .list-item {
     color: cyan;
     font-weight: lighter;
   }
+
+  /* SLIDE SHOW AFTER NAVS */
+  .slideshow {
+    /* max-width: 1200px; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0px;
+    overflow: hidden;
+  }
+
+  /* Slideshow container */
+  .slideshow-container {
+    /* max-width: 1000px; */
+    position: relative;
+    /* margin: auto; */
+  }
+
+  .image-slideshow {
+    height: 300px;
+    max-width: 100%;
+  }
+
   /* VISIT AND TRIP SECTION */
   .visit-trip-section {
     display: flex;
@@ -943,7 +979,7 @@ footer .list-group .list-item {
   }
 
   .parallax-hotel-image {
-    background: url(../images/classic-hotels.jpg);
+    background: url(../images/zanzibar-serena-hotel.jpg);
     width: 100vw;
     height: 600px;
   }
@@ -1058,7 +1094,7 @@ footer .list-group .list-item {
 
 /* 
 
- ACCOMODATION AND HOTELS PAGE SECTION
+ ACCOMODATION AND HOTELS HTML PAGE SECTION
 
 */
 
@@ -1178,4 +1214,192 @@ footer .list-group .list-item {
   align-items: center;
   flex-direction: column;
   text-align: center;
+}
+
+/* 
+
+CONTACT US HTML PAGE SECTION
+
+*/
+
+.header-social-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.header-social-wrapper .header-title {
+  color: var(--primary);
+}
+
+/* Social icons */
+
+.header-social-wrapper .list-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+  list-style-type: none;
+}
+
+.header-social-wrapper .list-group .list-item {
+  margin: 10px;
+  font-weight: lighter;
+}
+
+.header-social-wrapper .list-group .list-item .link {
+  color: #fefefe;
+  font-size: 1.5rem;
+}
+
+.header-social-wrapper .list-group .list-item .active-link {
+  color: #00b0ff;
+}
+
+.header-social-wrapper .list-group .list-item .link:hover {
+  color: cyan;
+  font-weight: lighter;
+}
+
+.header-social-wrapper .list-group .list-item .fa {
+  padding: 10px;
+  font-size: 1.4rem;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.header-social-wrapper .list-group .list-item .fa-youtube {
+  color: white;
+  background-color: red;
+  border-radius: 10px;
+}
+.header-social-wrapper .list-group .list-item .fa-youtube:hover {
+  color: red;
+  background-color: white;
+}
+
+.header-social-wrapper .list-group .list-item .fa-instagram {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  color: white;
+  border-radius: 10px;
+}
+
+.contact-media {
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+/* Social icons */
+.header-social-wrapper .list-group .list-item .fa-instagram:hover {
+  background-color: white;
+}
+
+.header-social-wrapper .list-group .list-item .fa-facebook {
+  color: white;
+  background-color: blue;
+  border-radius: 10px;
+}
+.header-social-wrapper .list-group .list-item .fa-facebook:hover {
+  color: blue;
+  background-color: white;
+}
+
+.header-social-wrapper .list-group .list-item .fa:hover {
+  opacity: 0.9;
+}
+
+/* Form */
+
+fieldset {
+  padding: 20px;
+}
+
+legend {
+  font-size: 1.2rem;
+  font-weight: 800;
+  padding: 6px;
+}
+.form-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  /* border: 1px solid grey; */
+  margin: 5px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+  padding: 5px;
+}
+
+.form-group .form-controls {
+  display: block;
+  width: 200px;
+  height: 10px;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 3px;
+  margin: 3px;
+}
+
+.form-group .comment {
+  height: 100px;
+}
+
+.check-box {
+  justify-content: end;
+  flex-direction: row;
+}
+
+check {
+  margin: 5px;
+  padding: 3px;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 30px;
+  border: 1px solid grey;
+  border-radius: 3px;
+  font-size: 1rem;
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.submit:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: blue;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+}
+
+address p {
+  margin: 10px;
+  padding: 5px;
 }
