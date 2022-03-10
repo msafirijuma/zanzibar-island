@@ -4,6 +4,11 @@
 var seviSlideIndex = 1;
 previewSeviSlides(seviSlideIndex);
 
+// Next/previous controls
+function seviPlusSlides(n) {
+  previewSeviSlides(seviSlideIndex += n);
+}
+
 // Thumbnail image controls
 function seviCurrentSlide(n) {
   previewSeviSlides(seviSlideIndex = n);
