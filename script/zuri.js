@@ -4,6 +4,11 @@
 var zuriSlideIndex = 1;
 previewZuriSlides(zuriSlideIndex);
 
+// Next/previous controls
+function zuriPlusSlides(n) {
+  previewZuriSlides(zuriSlideIndex += n);
+}
+
 // Thumbnail image controls
 function zuriCurrentSlide(n) {
   previewZuriSlides(zuriSlideIndex = n);

@@ -4,6 +4,11 @@
 var aiyanaSlideIndex = 1;
 previewAiyanaSlides(aiyanaSlideIndex);
 
+// Next/previous controls
+function aiyanaPlusSlides(n) {
+  previewAiyanaSlides(aiyanaSlideIndex += n);
+}
+
 // Thumbnail image controls
 function aiyanaCurrentSlide(n) {
   previewAiyanaSlides(aiyanaSlideIndex = n);

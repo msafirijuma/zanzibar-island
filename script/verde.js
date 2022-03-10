@@ -4,6 +4,11 @@
 var verdeSlideIndex = 1;
 previewVerdeSlides(verdeSlideIndex);
 
+// Next/previous controls
+function verdePlusSlides(n) {
+  previewVerdeSlides(verdeSlideIndex += n);
+}
+
 // Thumbnail image controls
 function verdeCurrentSlide(n) {
   previewVerdeSlides(verdeSlideIndex = n);

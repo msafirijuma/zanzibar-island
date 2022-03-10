@@ -4,6 +4,12 @@
 var mantaSlideIndex = 1;
 previewMantaSlides(mantaSlideIndex);
 
+
+// Next/previous controls
+function mantaPlusSlides(n) {
+  previewMantaSlides(mantaSlideIndex += n);
+}
+
 // Thumbnail image controls
 function mantaCurrentSlide(n) {
   previewMantaSlides(mantaSlideIndex = n);

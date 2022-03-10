@@ -4,6 +4,11 @@
 var funduSlideIndex = 1;
 previewFunduSlides(funduSlideIndex);
 
+// Next/previous controls
+function funduPlusSlides(n) {
+  previewFunduSlides(funduSlideIndex += n);
+}
+
 // Thumbnail image controls
 function funduCurrentSlide(n) {
   previewFunduSlides(funduSlideIndex = n);
