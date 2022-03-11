@@ -805,10 +805,11 @@ footer .list-group .list-item {
   align-items: center;
   justify-content: center;
   text-align: center;
+  text-decoration: none;
   background: var(--primary);
   color: #fefefe;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   position: fixed;
   bottom: 20px;
@@ -1399,6 +1400,11 @@ EACH HOTEL IMAGES SLIDESHOW
   font-weight: 500;
 }
 
+.tour-header-section p {
+  margin: 2px 5px;
+  padding: 3px;
+}
+
 .old-fort-section,
 .stone-town-section,
 .jozani-park-section,
@@ -1408,12 +1414,106 @@ EACH HOTEL IMAGES SLIDESHOW
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+
+.old-fort-section p {
+  margin: 3px 5px;
+  padding: 3px;
 }
 
 .site-header-title {
   color: var(--primary);
   font-size: 1.2rem;
-  font-weight: lighter;
+  font-weight: 600;
+  margin: 3px;
+}
+
+/* slideshow */
+.tour-fort-slideshow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-height: 400px;
+  margin-bottom: 15px;
+  margin-top: 3px;
+}
+
+.tour-fort-slideshow .fort-slides {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  margin-top: 40px;
+}
+
+/* Styling images */
+
+.tour-fort-slideshow .images-tour {
+  height: 275px;
+  width: 100%;
+}
+/* Hide the images by default */
+
+.tour-fort-slideshow .sevi-slides {
+  display: none;
+}
+
+/* Number text  */
+.tour-fort-slideshow .caption-text {
+  color: black;
+  font-size: 16px;
+  font-weight: bolder;
+  padding: 8px 12px;
+  position: relative;
+  top: 10px;
+}
+
+.old-fort-section .control-image-button {
+  position: absolute;
+  top: 75%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.old-fort-section .preview-image,
+.old-fort-section .next-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #000;
+  font-size: 1.2rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+.preview-image:hover,
+.next-image:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: color 2s;
+  /* color: black; */
+}
+
+.old-fort-section .next-image {
+  right: -170px;
+}
+
+.old-fort-section .preview-image {
+  left: -170px;
+}
+
+.active {
+  background-color: #717171;
 }
 
 /* 
@@ -1535,7 +1635,6 @@ legend {
   justify-content: center;
   flex-direction: column;
   padding: 10px;
-  /* border: 1px solid grey; */
   margin: 5px;
 }
 
