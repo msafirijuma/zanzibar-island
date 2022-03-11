@@ -8,6 +8,7 @@
         <title>About Us</title>
         <link rel="stylesheet" href="../style/styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/0932777f20.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -239,26 +240,26 @@
             <section class="source-info">
                 <h3 class="source-header">Source</h3>
                 <p class="source-paragraph"><a href="https://www.britannica.com/place/Zanzibar-Tanzania"  class="source-link" target="_blank"  >Britanicca</a></p>
-                <p class="source-paragraph"><a href="#"  class="source-link" target="https://en.wikipedia.org/wiki/Zanzibar" >Wikipedia</a></p>
+                <p class="source-paragraph"><a href="https://en.wikipedia.org/wiki/Zanzibar"  class="source-link" target="_blank" >Wikipedia</a></p>
             </section>
                 
         </main>
 
-          <!-- FOOTER -->
-        <footer class="footer">
-            <footer class="footer social">
-                <h2>Visit Zanzibar Island</h2>
-                <hr class="divider divider-footer-header">
-                <br>
-                <ul class="list-group">
-                    <li class="list-item"><a href="https://twitter.com/Zul_fiqar99" class="link fa fa-instagram"
-                            target="_blank"></a>
-                    </li>
-                    <li class="list-item"><a href="https://www.linkedin.com/in/msafiri-juma-esmail-817289229"
-                            class="link fa fa-youtube" target="_blank"></a></li>
-                    <li class="list-item"><a href="https://github.com/msafirijuma" class="link fa fa-facebook"
-                            target="_blank"></a>
-                    </li>
+
+        <!-- FOOTER -->
+        <footer class="footer social">
+            <h2>Visit Zanzibar Island</h2>
+            <hr class="divider divider-footer-header">
+            <br>
+            <ul class="list-group">
+                <li class="list-item"><a href="https://twitter.com/Zul_fiqar99" class="link fa fa-instagram"
+                target="_blank"></a>
+                </li>
+                <li class="list-item"><a href="https://www.linkedin.com/in/msafiri-juma-esmail-817289229"
+                class="link fa fa-youtube" target="_blank"></a></li>
+                <li class="list-item"><a href="https://github.com/msafirijuma" class="link fa fa-facebook"
+                target="_blank"></a>
+                </li>
                 </ul><br>
                 <h4 class="copyright">Copyright &copy;
                     <script>
@@ -267,20 +268,21 @@
                     </script>
                     | Msafiri Juma
                 </h4>
-            </footer>
-            <!-- Back to the top of the page -->
-            <div class="top">
-                <a href="#top-of-page" title="Back to the top">&UpArrow;</a>
-            </div>
-            <script>
-                 var humburger = document.querySelector(".humburger");
+        </footer>
 
-                    humburger.onclick = function () {
-                        var navBar = document.querySelector(".nav-bar");
-                        navBar.classList.toggle("active");
-                    }
+        <!-- Back to the top of the page -->
+        <a href="#top-of-page" title="Back to the top" class="top">&UpArrow;</a>
 
-            </script>
+        <!-- script for hamburger -->
+        <script>
+            var humburger = document.querySelector(".humburger");
+
+            humburger.onclick = function () {
+            var navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+            }
+        </script>
+
     </body>
 
 </html>

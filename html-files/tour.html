@@ -8,10 +8,11 @@
         <title>Tours</title>
         <link rel="stylesheet" href="../style/styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/0932777f20.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
-        <header class="header">
+        <header class="header" id="top-of-page">
             <div class="brand-wrapper">
                 <h1 class="brand-name">Zanzibar Island</h1>
             </div>
@@ -55,7 +56,47 @@
 
             <section class="old-fort-section">
                 <h2 class="site-header-title">OLD FORT</h2>
-                <p></p>
+                <span><i class="fa fa-map-marker"></i> Stone Town, Zanzibar City</span>
+                <p>The Old Fort (Swahili: Ngome Kongwe), also known as the Arab Fort, is among the oldest building located in Stone Town, the capital of Zanzibar. It is the oldest building and a major visitor attraction of Stone Town. It is located on the main seafront, adjacent to another landmark building of the city, the House of Wonders
+                (former palace of the Sultan of Zanzibar), and facing the Forodhani Gardens.</p>
+                <p>It was built by Omani Arabs after expelling the Portuguese in 1699. It was used as a garrison and prison in the 19th century, and as a terminal of the Zanzibar railways 1905-28. A new guardhouse was built in 1947 and used as the ladies' club, and an amphitheatre was added in the 1990s. It is now the headquarters of the Zanzibar international film
+                festival.</p>
+                <p>The Old Fort is one of the prominent visitor attractions in Stone Town, and its courtyard has been adapted to serve as a cultural centre with curio shops selling tourist-oriented merchandise such as tingatinga paintings; it also has an
+                open-air amphitheatre where live dance and music shows are held most evenings, a restaurant, and a tourist information
+                desk. It is also the main venue used for large events such as the Festival of the Dhow Countries (also known as the
+                Zanzibar International Film Festival) and the Sauti za Busara.</p>
+
+                <!-- slideshow -->
+                <div class="tour-fort-slideshow">
+                    <!-- Full-width images with number and caption text -->
+                    <div class="fort-slides fade">
+                        <img src="../images/verde-hotel.jpg" class="images-tour">
+                        <div class="caption-text">1 / 3</div>
+                    </div>
+                
+                    <div class="fort-slides fade">
+                        <img src="../images/fort.jpg" class="images-tour">
+                        <div class="caption-text">2 / 3</div>
+                    </div>
+                
+                    <div class="fort-slides fade">
+                        <img src="../images/verde-chair.jpg" class="images-tour">
+                        <div class="caption-text">3 / 3</div>
+                    </div>
+                </div>
+
+                <!-- Preview and Next button -->
+                <div class="control-image-button">
+                    <a class="preview-image" onclick="fortPlusSlides(-1)">&LeftArrow;</a>
+                    <a class="next-image" onclick="fortPlusSlides(1)">&RightArrow;</a>
+                </div>
+
+                <div>
+                    <h3 class="source-header">Source</h3>
+                    <p class="source-paragraph"><a
+                    href="https://web.archive.org/web/20111002190126/https://www.getaway.co.za/article/stone-town-zanzibar-2010-10-19"
+                    class="source-link" target="_blank">Stone Town, Zanzibar</a></p>
+                </div>
             </section>
             <hr class="horizontal-divider">
 
@@ -83,22 +124,35 @@
             </section>
             <hr class="horizontal-divider">
 
+            <section class="forodhani-section">
+                <h2 class="site-header-title">MKAME NDUME RUINS</h2>
+                <span><i class="fa fa-map-marker"></i> Chake Chake, Pemba</span>
+                <p></p>
+            </section>
+            <hr class="horizontal-divider">
+
+            <section class="forodhani-section">
+                <h2 class="site-header-title">MKAME NDUME RUINS</h2>
+                <span><i class="fa fa-map-marker"></i> Chake Chake, Pemba</span>
+                <p></p>
+            </section>
+
         </main>
 
         <!-- FOOTER -->
-            <footer class="footer social">
-                <h2>Visit Zanzibar Island</h2>
-                <hr class="divider divider-footer-header">
-                <br>
-                <ul class="list-group">
-                    <li class="list-item"><a href="https://twitter.com/Zul_fiqar99" class="link fa fa-instagram"
-                            target="_blank"></a>
-                    </li>
-                    <li class="list-item"><a href="https://www.linkedin.com/in/msafiri-juma-esmail-817289229"
-                            class="link fa fa-youtube" target="_blank"></a></li>
-                    <li class="list-item"><a href="https://github.com/msafirijuma" class="link fa fa-facebook"
-                            target="_blank"></a>
-                    </li>
+        <footer class="footer social">
+            <h2>Visit Zanzibar Island</h2>
+            <hr class="divider divider-footer-header">
+            <br>
+            <ul class="list-group">
+                <li class="list-item"><a href="https://twitter.com/Zul_fiqar99" class="link fa fa-instagram"
+                target="_blank"></a>
+                </li>
+                <li class="list-item"><a href="https://www.linkedin.com/in/msafiri-juma-esmail-817289229"
+                class="link fa fa-youtube" target="_blank"></a></li>
+                <li class="list-item"><a href="https://github.com/msafirijuma" class="link fa fa-facebook"
+                target="_blank"></a>
+                </li>
                 </ul><br>
                 <h4 class="copyright">Copyright &copy;
                     <script>
@@ -107,21 +161,23 @@
                     </script>
                     | Msafiri Juma
                 </h4>
-            </footer>
-            <!-- Back to the top of the page -->
-            <div class="top">
-                <a href="#top-of-page" title="Back to the top">&UpArrow;</a>
-            </div>
+        </footer>
+            
+        <!-- Back to the top of the page -->
+        <a href="#top-of-page" title="Back to the top" class="top">&UpArrow;</a>
         
-       <script>
+        <!-- script for hamburger -->
+        <script>
                  var humburger = document.querySelector(".humburger");
 
                     humburger.onclick = function () {
                         var navBar = document.querySelector(".nav-bar");
                         navBar.classList.toggle("active");
                     }
-
         </script>
+
+        <!-- script for slideshows -->
+        <script src="../script/tour-js/fort.js"></script>
     </body>
    
 
