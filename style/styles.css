@@ -460,7 +460,11 @@ body {
   height: 250px;
   /* height: 683px; */
 }
-/* END OF TRIP AND TOUR SECTION */
+/* 
+
+END OF TRIP AND TOUR SECTION
+
+*/
 
 /* HOTELS AND ACCOMODATIONS */
 .accomodation-section-header {
@@ -824,7 +828,7 @@ footer .list-group .list-item {
 
 .top:hover {
   cursor: pointer;
-  background-color: rgb(143, 208, 228);
+  color: black;
 }
 
 /* END OF THE FOOTER
@@ -993,6 +997,17 @@ footer .list-group .list-item {
     background: url(../images/jozani-national-park.jpg);
     width: 100vw;
     height: 600px;
+  }
+
+  .preview-image:hover,
+  .next-image:hover {
+    cursor: pointer;
+    transition: color 2s;
+    background-color: none;
+  }
+  .top:hover {
+    cursor: pointer;
+    background-color: none;
   }
 }
 
@@ -1247,7 +1262,7 @@ EACH HOTEL IMAGES SLIDESHOW
 .hotel-verde-slideshow .images-hotel,
 .hotel-zuri-slideshow .images-hotel,
 .hotel-sevi-slideshow .images-hotel {
-  height: 275px;
+  height: 280px;
   width: 100%;
 }
 /* Hide the images by default */
@@ -1364,7 +1379,6 @@ EACH HOTEL IMAGES SLIDESHOW
   transition: color 2s;
   /* color: black; */
 }
-
 .next-image {
   right: -170px;
 }
@@ -1454,12 +1468,12 @@ EACH HOTEL IMAGES SLIDESHOW
 /* Styling images */
 
 .tour-fort-slideshow .images-tour {
-  height: 275px;
+  height: 280px;
   width: 100%;
 }
 /* Hide the images by default */
 
-.tour-fort-slideshow .sevi-slides {
+.tour-fort-slideshow .fort-slides {
   display: none;
 }
 
@@ -1475,7 +1489,7 @@ EACH HOTEL IMAGES SLIDESHOW
 
 .old-fort-section .control-image-button {
   position: absolute;
-  top: 75%;
+  top: 50%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -1501,7 +1515,6 @@ EACH HOTEL IMAGES SLIDESHOW
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.1);
   transition: color 2s;
-  /* color: black; */
 }
 
 .old-fort-section .next-image {
