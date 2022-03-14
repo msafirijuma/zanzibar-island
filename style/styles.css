@@ -1397,6 +1397,8 @@ EACH HOTEL IMAGES SLIDESHOW
   margin: 10px auto;
   height: 1px;
   width: 90%;
+  background-color: var(--secondary);
+  font-weight: lighter;
 }
 .tour-header-section {
   display: flex;
@@ -1495,7 +1497,7 @@ EACH HOTEL IMAGES SLIDESHOW
 .tour-ngezi-forest-slideshow .images-tour,
 .tour-forodhani-slideshow .images-tour,
 .tour-mkame-slideshow .images-tour,
-.tour-mkame-slideshow .images-tour {
+.tour-mkumbuu-slideshow .images-tour {
   height: 280px;
   width: 100%;
 }
@@ -1507,7 +1509,7 @@ EACH HOTEL IMAGES SLIDESHOW
 .tour-ngezi-forest-slideshow .ngezi-forest-slides,
 .tour-forodhani-slideshow .forodhani-slides,
 .tour-mkame-slideshow .mkame-slides,
-.tour-mkame-slideshow .mkumbuu-slides {
+.tour-mkumbuu-slideshow .mkumbuu-slides {
   display: none;
 }
 
@@ -1518,7 +1520,7 @@ EACH HOTEL IMAGES SLIDESHOW
 .tour-ngezi-forest-slideshow .caption-text,
 .tour-forodhani-slideshow .caption-text,
 .tour-mkame-slideshow .caption-text,
-.tour-mkame-slideshow .caption-text {
+.tour-mkumbuu-slideshow .caption-text {
   color: black;
   font-size: 16px;
   font-weight: bolder;
@@ -1528,6 +1530,10 @@ EACH HOTEL IMAGES SLIDESHOW
 }
 
 .old-fort-section .control-image-button,
+.stone-town-section .control-image-button,
+.jozani-park-section .control-image-button,
+.ngezi-forest-section .control-image-button,
+.forodhani-section .control-image-button,
 .mkame-section .control-image-button,
 .mkumbuu-section .control-image-button {
   position: absolute;
@@ -1538,6 +1544,10 @@ EACH HOTEL IMAGES SLIDESHOW
 }
 
 .old-fort-section .preview-image,
+.stone-town-section .preview-image,
+.jozani-park-section .preview-image,
+.ngezi-forest-section .preview-image,
+.forodhani-section .preview-image,
 .mkame-section .preview-image,
 .mkumbuu-section .preview-image {
   display: flex;
@@ -1554,6 +1564,10 @@ EACH HOTEL IMAGES SLIDESHOW
 }
 
 .old-fort-section .preview-image,
+.stone-town-section .preview-image,
+.jozani-park-section .preview-image,
+.ngezi-forest-section .preview-image,
+.forodhani-section .preview-image,
 .mkame-section .preview-image,
 .mkumbuu-section .preview-image {
   display: flex;
@@ -1577,11 +1591,19 @@ EACH HOTEL IMAGES SLIDESHOW
 }
 
 .old-fort-section .preview-image,
+.stone-town-section .preview-image,
+.jozani-park-section .preview-image,
+.ngezi-forest-section .preview-image,
+.forodhani-section .preview-image,
 .mkame-section .preview-image,
 .mkumbuu-section .preview-image {
   right: -170px;
 }
 .old-fort-section .preview-image,
+.stone-town-section .preview-image,
+.old-fort-section .preview-image,
+.jozani-park-section .preview-image,
+.forodhani-section .preview-image,
 .mkame-section .preview-image,
 .mkumbuu-section .preview-image {
   left: -170px;
