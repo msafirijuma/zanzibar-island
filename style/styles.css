@@ -1434,7 +1434,7 @@ EACH HOTEL IMAGES SLIDESHOW
   flex-direction: column;
   text-align: center;
   position: relative;
-  margin-top: 20px 10px;
+  margin: 25px 10px;
   padding: 1px;
 }
 
@@ -1445,7 +1445,7 @@ EACH HOTEL IMAGES SLIDESHOW
 .forodhani-section p,
 .mkame-section p,
 .mkumbuu-section p {
-  margin: 1px 5px;
+  margin: 2px 3px;
   padding: 3px;
 }
 
@@ -1453,7 +1453,7 @@ EACH HOTEL IMAGES SLIDESHOW
   color: var(--primary);
   font-size: 1.2rem;
   font-weight: 600;
-  margin: 3px;
+  margin: 5px;
 }
 
 /* slideshow */
