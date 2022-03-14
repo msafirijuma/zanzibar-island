@@ -1423,17 +1423,27 @@ EACH HOTEL IMAGES SLIDESHOW
 .stone-town-section,
 .jozani-park-section,
 .ngezi-forest-section,
-.forodhani-section {
+.forodhani-section,
+.mkame-section,
+.mkumbuu-section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
   position: relative;
+  margin-top: 20px 10px;
+  padding: 1px;
 }
 
-.old-fort-section p {
-  margin: 3px 5px;
+.old-fort-section p,
+.stone-town-section p,
+.jozani-park-section p,
+.ngezi-forest-section p,
+.forodhani-section p,
+.mkame-section p,
+.mkumbuu-section p {
+  margin: 1px 5px;
   padding: 3px;
 }
 
@@ -1445,7 +1455,13 @@ EACH HOTEL IMAGES SLIDESHOW
 }
 
 /* slideshow */
-.tour-fort-slideshow {
+.tour-fort-slideshow,
+.tour-stone-town-slideshow,
+.tour-jozani-park-slideshow,
+.tour-ngezi-forest-slideshow,
+.tour-forodhani-slideshow,
+.tour-mkame-slideshow,
+.tour-mkumbuu-slideshow {
   position: relative;
   display: flex;
   align-items: center;
@@ -1456,7 +1472,13 @@ EACH HOTEL IMAGES SLIDESHOW
   margin-top: 3px;
 }
 
-.tour-fort-slideshow .fort-slides {
+.tour-fort-slideshow .fort-slides,
+.tour-stone-town-slideshow .stone-town-slides,
+.tour-jozani-park-slideshow .jozani-park-slides,
+.tour-ngezi-forest-slideshow .ngezi-forest-slides,
+.tour-forodhani-slideshow .forodhani-slides,
+.tour-mkame-slideshow .mkame-slides,
+.tour-mkumbuu-slideshow .mkumbuu-slides {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1467,18 +1489,36 @@ EACH HOTEL IMAGES SLIDESHOW
 
 /* Styling images */
 
-.tour-fort-slideshow .images-tour {
+.tour-fort-slideshow .images-tour,
+.tour-stone-town-slideshow .images-tour,
+.tour-jozani-park-slideshow .images-tour,
+.tour-ngezi-forest-slideshow .images-tour,
+.tour-forodhani-slideshow .images-tour,
+.tour-mkame-slideshow .images-tour,
+.tour-mkame-slideshow .images-tour {
   height: 280px;
   width: 100%;
 }
 /* Hide the images by default */
 
-.tour-fort-slideshow .fort-slides {
+.tour-fort-slideshow .fort-slides,
+.tour-stone-town-slideshow .stone-town-slides,
+.tour-jozani-park-slideshow .jozani-park-slides,
+.tour-ngezi-forest-slideshow .ngezi-forest-slides,
+.tour-forodhani-slideshow .forodhani-slides,
+.tour-mkame-slideshow .mkame-slides,
+.tour-mkame-slideshow .mkumbuu-slides {
   display: none;
 }
 
 /* Number text  */
-.tour-fort-slideshow .caption-text {
+.tour-fort-slideshow .caption-text,
+.tour-stone-town-slideshow .caption-text,
+.tour-jozani-park-slideshow .caption-text,
+.tour-ngezi-forest-slideshow .caption-text,
+.tour-forodhani-slideshow .caption-text,
+.tour-mkame-slideshow .caption-text,
+.tour-mkame-slideshow .caption-text {
   color: black;
   font-size: 16px;
   font-weight: bolder;
@@ -1487,7 +1527,9 @@ EACH HOTEL IMAGES SLIDESHOW
   top: 10px;
 }
 
-.old-fort-section .control-image-button {
+.old-fort-section .control-image-button,
+.mkame-section .control-image-button,
+.mkumbuu-section .control-image-button {
   position: absolute;
   top: 50%;
   display: flex;
@@ -1496,7 +1538,24 @@ EACH HOTEL IMAGES SLIDESHOW
 }
 
 .old-fort-section .preview-image,
-.old-fort-section .next-image {
+.mkame-section .preview-image,
+.mkumbuu-section .preview-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #000;
+  font-size: 1.2rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+.old-fort-section .preview-image,
+.mkame-section .preview-image,
+.mkumbuu-section .preview-image {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1517,11 +1576,14 @@ EACH HOTEL IMAGES SLIDESHOW
   transition: color 2s;
 }
 
-.old-fort-section .next-image {
+.old-fort-section .preview-image,
+.mkame-section .preview-image,
+.mkumbuu-section .preview-image {
   right: -170px;
 }
-
-.old-fort-section .preview-image {
+.old-fort-section .preview-image,
+.mkame-section .preview-image,
+.mkumbuu-section .preview-image {
   left: -170px;
 }
 
