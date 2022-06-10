@@ -153,7 +153,7 @@ body {
   justify-content: center;
   cursor: pointer;
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.521);
+  background-color: rgba(0, 0, 0, 0.4);
   top: 50%;
   width: 5px;
   height: 5px;
@@ -211,12 +211,12 @@ body {
 .dot-jozani,
 .dot-market {
   cursor: pointer;
+  display: inline-block;
   height: 15px;
   width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
+  margin: 3px 2px;
+  background-color: red;
   border-radius: 50%;
-  display: inline-block;
   transition: background-color 0.6s ease;
 }
 
@@ -358,11 +358,16 @@ body {
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.3);
   padding: 5px;
-  border-radius: 2px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .location-and-details-wrapper h3 {
   text-align: center;
+}
+
+.location-and-details-wrapper p {
+  text-align: left;
 }
 
 .ngezi-forest,
@@ -370,9 +375,9 @@ body {
 .stone-town {
   width: 33%;
   margin: 20px 10px;
-  padding: 20px;
+  padding: 16px;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   flex-direction: column;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4), 0px -4px 8px rgba(0, 0, 0, 0.4);
@@ -392,8 +397,8 @@ body {
   transition: background-color 0.8s ease;
 }
 
-.dot-ngezi,
-.dot-jozani,
+.dot-ngezi:hover,
+.dot-jozani:hover,
 .dot-market:hover {
   background-color: #777;
   cursor: pointer;
@@ -459,11 +464,8 @@ body {
   height: 250px;
   /* height: 683px; */
 }
-/* 
 
-END OF TRIP AND TOUR SECTION
-
-*/
+/* END OF TRIP AND TOUR SECTION */
 
 /* HOTELS AND ACCOMODATIONS */
 .accomodation-section-header {
@@ -657,8 +659,8 @@ END OF TRIP AND TOUR SECTION
 
 .parallax-paragraph {
   font-family: "Lato";
-  margin: 10px 1px;
-  padding: 15px;
+  margin: 3px 1px;
+  padding: 10px;
   font-size: 1.2rem;
   font-weight: lighter;
 }
@@ -935,9 +937,8 @@ footer .list-group .list-item {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 2px;
+  margin: 10px;
+  padding: 5px;
 }
 
 .accomodation-header h2 {
@@ -998,13 +999,13 @@ footer .list-group .list-item {
 
 .services h3 {
   color: var(--primary);
-  margin: 8px;
+  margin: 2px;
 }
 
 .services span {
   display: inline-block;
-  margin: 3px 6px;
-  padding: 3px;
+  margin: 3px 4px;
+  padding: 2px;
 }
 
 .hotels-wrapper .btn {
@@ -1103,7 +1104,7 @@ footer .list-group .list-item {
 
 /* The dots/bullets/indicators */
 .hotels-dots {
-  margin: 5px;
+  margin: 2px;
 }
 
 .manta-dot,
@@ -1115,7 +1116,7 @@ footer .list-group .list-item {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 30px 2px;
+  margin: 2px 2px 8px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -1663,7 +1664,7 @@ legend {
   .nav-bar {
     z-index: 30;
     position: absolute;
-    top: 68px;
+    top: 74px;
     left: 0;
     right: 0;
     width: 100%;
@@ -1757,6 +1758,19 @@ legend {
   .location-and-details-wrapper p {
     text-align: left;
   }
+
+  .tour-main p,
+  .accomodation-header p,
+  .luxury-hotels p{
+    text-align: left;
+  }
+
+  .main-about-section p {
+    text-align: left;
+    margin: 4px;
+    padding: 2px;
+  }
+
 
   /* PARALLAX SECTION */
   .parallax-section div {
