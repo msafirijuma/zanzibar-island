@@ -53,7 +53,7 @@ body {
 }
 
 .brand-name {
-  font-family: "Dance Script", cursive;
+  font-family: "Bad Script", cursive;
   text-shadow: 2px 2px #bebebe;
   font-size: 1.5rem;
   padding: 0.6rem;
@@ -1664,7 +1664,7 @@ legend {
   .nav-bar {
     z-index: 30;
     position: absolute;
-    top: 74px;
+    top: 73px;
     left: 0;
     right: 0;
     width: 100%;
