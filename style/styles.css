@@ -1678,6 +1678,8 @@ legend {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    margin-left: 0px;
+    margin-top: 20px;
   }
 
   .nav-bar .list-group .list-item {
@@ -1687,7 +1689,7 @@ legend {
 
   .nav-bar .list-group .list-item .link {
     color: #fefefe;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .nav-bar .list-group .list-item .active-link {
