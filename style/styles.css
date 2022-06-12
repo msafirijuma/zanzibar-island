@@ -42,11 +42,11 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom: 3px solid rgb(0, 255, 255);
-  padding: 8px;
+  padding: 12px;
 }
 
 .brand-wrapper {
-  margin-right: 5%;
+  margin-right: 5px;
   color: #fefefe;
   font-family: "Bad Script", cursive;
   font-size: 1.8rem;
@@ -56,36 +56,30 @@ body {
   font-family: "Bad Script", cursive;
   text-shadow: 2px 2px #bebebe;
   font-size: 1.5rem;
-  padding: 0.6rem;
-  margin: 0.1rem;
+  padding: 1px;
+  margin-left: 8px;
 }
 
-.humburger {
+.hamburger {
   display: none;
 }
-.nav-icon {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-left: 0.6rem;
-}
+
 .nav-bar .list-group {
   list-style-type: none;
   text-align: right;
-  padding: 0.6rem;
-  margin: 0.3rem;
+  margin-left: 30px;
 }
 
 .nav-bar .list-group .list-item {
   display: inline-block;
-  margin: 10px;
-  padding: 5px 10px;
 }
 
 .nav-bar .link {
   color: var(--off-white);
   text-decoration: none;
   font-weight: 100px;
-  margin: 2px 2px;
+  margin-left: 15px;
+  margin-right: 5px;
   transition: color 0.7s;
 }
 
@@ -1638,7 +1632,7 @@ legend {
     flex-direction: column;
   }
 
-  .humburger {
+  .hamburger {
     display: block;
     position: relative;
     right: 10px;
@@ -1647,12 +1641,12 @@ legend {
     font-size: 1.4rem;
   }
 
-  .humburger-link {
+  .hamburger-link {
     color: #fefefe;
   }
 
-  /* Coloring humberger icon */
-  .humburger .fa-bars {
+  /* Coloring hamburger icon */
+  .hamburger .fa-bars {
     color: #fefefe;
     text-decoration: none;
     padding: 10px;
