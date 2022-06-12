@@ -1695,7 +1695,7 @@ legend {
 
   .nav-bar .list-group .list-item .link {
     color: #fefefe;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .nav-bar .list-group .list-item .active-link {
@@ -1711,7 +1711,7 @@ legend {
     display: inline-block;
     width: 30px;
     height: 30px;
-    margin-right: 14px;
+    margin-right: 8px;
   }
 
   .about-zanzibar p,
