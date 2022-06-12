@@ -67,7 +67,7 @@ body {
 .nav-bar .list-group {
   list-style-type: none;
   text-align: right;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .nav-bar .list-group .list-item {
@@ -77,8 +77,9 @@ body {
 .nav-bar .link {
   color: var(--off-white);
   text-decoration: none;
+  font-size: 20px;
   font-weight: 100px;
-  margin-left: 15px;
+  margin-left: 5px;
   margin-right: 5px;
   transition: color 0.7s;
 }
@@ -91,6 +92,8 @@ body {
 .nav-bar .list-group .list-item .active-link {
   color: #00b0ff;
 }
+
+
 
 /* END OF THE HEADER */
 
@@ -1692,7 +1695,7 @@ legend {
 
   .nav-bar .list-group .list-item .link {
     color: #fefefe;
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .nav-bar .list-group .list-item .active-link {
@@ -1702,6 +1705,13 @@ legend {
   .nav-bar .list-group .list-item .link:hover {
     color: cyan;
     font-weight: lighter;
+  }
+
+  .nav-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 14px;
   }
 
   .about-zanzibar p,
