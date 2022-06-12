@@ -1,11 +1,11 @@
- var humburger = document.querySelector(".humburger");
+ var hamburger = document.querySelector(".hamburger");
 
-    humburger.onclick = function () {
+    hamburger.onclick = function () {
         var navBar = document.querySelector(".nav-bar");
         navBar.classList.toggle("active");
     }
 
-// SCRIPT FOR IMAGE SLIDESHOW OR CAROUSEL
+// CAROUSEL (AUTO SLIDE SHOW) SCRIPT
 
 var slideIndex = 0;
 
