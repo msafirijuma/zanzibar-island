@@ -711,18 +711,28 @@ body {
 
 /* FOOTER AND SOCIAL ICONS */
 
-.social .list-group .list-item .fa {
-  padding: 10px;
+.social .list-group .list-item .fa,
+.header-social-wrapper .list-group .list-item .fa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 11px;
   font-size: 1.4rem;
-  width: 40px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
   text-align: center;
   text-decoration: none;
 }
 
+.header-social-wrapper .list-group .list-item .link{
+  text-decoration: none;
+}
+
+
 .social .list-group .list-item .fa-youtube {
   color: white;
   background-color: red;
-  border-radius: 10px;
 }
 .social .list-group .list-item .fa-youtube:hover {
   color: red;
@@ -739,7 +749,6 @@ body {
     #285aeb 90%
   );
   color: white;
-  border-radius: 10px;
 }
 .social .list-group .list-item .fa-instagram:hover {
   background-color: white;
@@ -748,7 +757,6 @@ body {
 .social .list-group .list-item .fa-facebook {
   color: white;
   background-color: blue;
-  border-radius: 10px;
 }
 .social .list-group .list-item .fa-facebook:hover {
   color: blue;
@@ -804,7 +812,10 @@ footer .link {
 }
 
 footer .list-group .list-item {
-  display: inline;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
 }
 
 .social {
@@ -812,7 +823,7 @@ footer .list-group .list-item {
 }
 
 .social .link {
-  padding: 3px;
+  padding: 4px;
 }
 .social .link:hover {
   color: var(--secondary-focus);
@@ -1209,11 +1220,7 @@ footer .list-group .list-item {
   left: -170px;
 }
 
-/* 
-
- TRAVEL AND TOUR
-
-*/
+/* TRAVEL AND TOUR */
 
 .tour-main .horizontal-divider {
   margin: 10px auto;
@@ -1481,7 +1488,9 @@ footer .list-group .list-item {
 .header-social-wrapper .list-group .list-item .fa {
   padding: 10px;
   font-size: 1.4rem;
-  width: 40px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
   text-align: center;
   text-decoration: none;
 }
@@ -1489,7 +1498,6 @@ footer .list-group .list-item {
 .header-social-wrapper .list-group .list-item .fa-youtube {
   color: white;
   background-color: red;
-  border-radius: 10px;
 }
 .header-social-wrapper .list-group .list-item .fa-youtube:hover {
   color: red;
@@ -1506,7 +1514,6 @@ footer .list-group .list-item {
     #285aeb 90%
   );
   color: white;
-  border-radius: 10px;
 }
 
 .contact-media {
@@ -1521,7 +1528,6 @@ footer .list-group .list-item {
 .header-social-wrapper .list-group .list-item .fa-facebook {
   color: white;
   background-color: blue;
-  border-radius: 10px;
 }
 .header-social-wrapper .list-group .list-item .fa-facebook:hover {
   color: blue;
