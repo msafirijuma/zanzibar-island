@@ -47,24 +47,16 @@ body {
 
 .brand-wrapper {
   color: #fefefe;
-  margin-top: -10px;
+  margin-top: -5px;
 }
 
 .brand-name {
   margin-right: 1px;
   font-family: "Bad Script", cursive;
   text-shadow: 2px 2px #bebebe;
-  font-size: 1.0rem;
+  font-size: 1.3rem;
   padding: 1px;
   margin-left: 8px;
-}
-
-.nav-icon {
-  display: none;
-  width: 30px;
-  height: 30px;
-  margin-right: 2px;
-
 }
 
 .hamburger {
@@ -83,25 +75,45 @@ body {
 
 .nav-bar .list-group .list-item {
   display: inline-block;
+  margin-inline: 8px;
+  padding-inline: 2px;
+  padding-block: 4px;
 }
 
 .nav-bar .link {
   color: var(--off-white);
   text-decoration: none;
   font-size: 20px;
-  font-weight: 100px;
+  font-weight: lighter;
   transition: color 0.7s;
 }
 
 .nav-bar .link:hover {
-  color: cyan;
+  color: rgb(66, 202, 202);
   font-weight: lighter;
 }
 
+.link::after {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  content: " ";
+  width: 0px;
+  height: 1px;
+  background-color: #bebebe;
+  transition: width 0.6s ease;
+}
+
+.link:hover::after {
+  width: 100%;
+}
 .nav-bar .list-group .list-item .active-link {
   color: #00b0ff;
 }
 
+.nav-bar i.fa {
+  display: none;
+}
 
 
 /* END OF THE HEADER */
@@ -1635,6 +1647,10 @@ legend {
     flex-direction: column;
   }
 
+  .brand-name {
+    font-size: 1.4rem;
+  }
+
   .hamburger {
     display: block;
     position: relative;
@@ -1661,7 +1677,7 @@ legend {
   .nav-bar {
     z-index: 30;
     position: absolute;
-    top: 62px;
+    top: 83px;
     left: 0;
     right: 0;
     width: 100%;
@@ -1704,8 +1720,11 @@ legend {
     font-weight: lighter;
   }
 
-  .nav-icon {
+  .nav-bar i.fa {
     display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 2px;
   }
 
   .about-zanzibar p,
